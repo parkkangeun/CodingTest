@@ -7,8 +7,8 @@ bundles = list(map(int, input().split()))
 answer = 0
 
 for i in size:
-    if i <= bundles[0]:
-        answer += 1
+    if i % bundles[0] == 0:
+        answer += i // bundles[0]
     else:
         answer += (i // bundles[0]) + 1
 
