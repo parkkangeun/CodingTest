@@ -3,7 +3,7 @@
 
 n = int(input())
 answer = 0
-for i in range(n - len(str(n)) * 9, n):
+for i in range(1, n):
     num = sum(map(int, str(i)))
     if i + num == n:
         answer = i
