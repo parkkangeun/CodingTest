@@ -4,7 +4,6 @@
 n = int(input())
 endNumber = 666
 cnt = 0
-
 while True:
     if '666' in str(endNumber):
         cnt += 1
