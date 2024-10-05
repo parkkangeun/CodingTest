@@ -9,7 +9,6 @@ people = []
 n = int(input())
 for _ in range(n):
     people.append(list(map(int, input().split())))
-
 for i in range(len(people)):
     cnt = 1
     for j in range(len(people)):
