@@ -26,5 +26,4 @@ for i in range(n - 7):
                         draw_02 += 1
         result.append(draw_01)
         result.append(draw_02)
-print(result)
 print(min(result))
