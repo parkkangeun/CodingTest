@@ -1,6 +1,17 @@
 # 2024.10.07
 # Python
 
+from collections import deque
+
+n = int(input())
+
+deque = deque([i for i in range(1, n + 1)])
+while len(deque) > 1:
+    deque.popleft()
+    temp = deque.popleft()
+    deque.append(temp)
+print(deque[0])
+
 # import queue
 # n = int(input())
 # que = queue.Queue()
@@ -22,10 +33,3 @@
 #     cards.append(cards[0])
 #     cards.pop(0)
 # print(*cards)
-
-from collections import deque
-
-n = int(input())
-
-deque = deque([i for i in range(1, n + 1)])
-print(deque)
