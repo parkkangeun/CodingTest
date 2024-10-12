@@ -12,7 +12,6 @@ num = 1
 answer = []
 for _ in range(n):
     lis.append(int(stdin.readline().rstrip()))
-temp = lis.copy()
 
 while len(lis) != 0:
     if len(stack) == 0 or stack[-1] < lis[0]:
