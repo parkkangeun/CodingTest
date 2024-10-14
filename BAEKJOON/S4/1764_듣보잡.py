@@ -6,6 +6,7 @@ from sys import stdin
 n, m = map(int, stdin.readline().split())
 answer = []
 dict = {}
+
 for _ in range(n):
     dict[stdin.readline().rstrip()] = 1
 for _ in range(m):
@@ -15,4 +16,7 @@ for _ in range(m):
 for key in dict:
     if 1 < dict[key]:
         answer.append(key)
-print(sorted(answer))
+        
+print(len(answer))
+for i in sorted(answer):
+    print(i)
