@@ -12,7 +12,6 @@ cnt = 0
 while True:
     cnt += 1
     n = (n % 10) * 10 + ((n // 10) + (n % 10)) % 10
-    print(n, n_copy)
     if n == n_copy:
         break
 
