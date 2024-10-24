@@ -23,5 +23,3 @@ for i in range(num):
             
 # 최대값을 가진 학생의 인덱스 출력
 print(same.index(max(same)) + 1)
-
-
