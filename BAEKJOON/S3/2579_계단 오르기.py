@@ -18,4 +18,5 @@ dp[3] = max(stairs[1] + stairs[3], stairs[2] + stairs[3])
 for i in range(4, t + 1):
     dp[i] = max(dp[i - 3] + stairs[i - 1] + stairs[i], dp[i - 2] + stairs[i])
 
+# 출력
 print(dp[t])
