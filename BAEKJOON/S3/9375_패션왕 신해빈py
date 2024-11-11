@@ -1,0 +1,25 @@
+# 2024.11.11
+# Python
+
+from sys import stdin
+
+input = stdin.readline
+
+# 입력받기
+t = int(input().rstrip())
+
+for _ in range(t):
+    wears = {}
+    for __ in range(int(input().rstrip())):
+        name, type = input().rstrip().split()
+        if type not in wears:
+            wears[type] = [name]
+        else:
+            wears[type].append(name)
+
+    answer = 1
+    for i in wears:
+        answer *= (len(wears[i]) + 1)
+
+
+    print(answer - 1)
